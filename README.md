@@ -2,21 +2,23 @@
 A Microsoft Word toolbar for proofreading and fixing common errors in law journal publications.
 
 # Functions
-The toolbar contains tools to check for and fix (1) journal name abbreviation errors or journal names not in small caps, (2) missing supra/infra cross-reference links, (3) missing permalinks or active hyperlinks, (4) un-italicized introductory signals, (5) missing periods at the end of footnotes, and (6) case name abbreviation errors. 
+The toolbar contains tools to check for and fix (1) journal name abbreviation errors or journal name small caps errors, (2) missing supra/infra cross-reference links, (3) missing permalinks or active hyperlinks, (4) non-italicized introductory signals, (5) missing periods at the end of footnotes, and (6) case name abbreviation errors.
 
-Note that there are edge cases in which the toolbar catches false positives or fails to catch true positives. The UI will highlight and show each error for the user to decide to fix (whether manually or using an automated fix).
+Note that the toolbar may identify false positives or fail to identify true positives. The user can review each error in the GUI and decide whether to fix it.
 
 # How to use
-Open Microsoft Word, go to Tools -> Templates and Add-ins, and add the "Artemis Law Journal Toolbar.dotm" file as a new add-in.
+Compatible with most versions of Microsoft Word on both Windows and Mac.
 
-Alternatively, copy "Artemis Law Journal Toolbar.dotm" to your Microsoft Word STARTUP folder. The startup folder is located at "C:\Users\[username]\AppData\Roaming\Microsoft\Word\STARTUP" in Windows Vista, 7, 8 and 10 for example.
+On Mac, open Word, go to Tools -> Templates and Add-ins, and add the "Artemis Law Journal Toolbar.dotm" file as a new add-in. Alternatively, copy "Artemis Law Journal Toolbar.dotm" to your Word STARTUP folder, typically located at "~/Library/Group Containers/UBF[alphanumeric string].Office/User Content/Startup/Word", and then re-open Word.
 
-After enabling macros, a tab named "Artemis" should appear in your Ribbon. This should only need to be done the first time using the toolbar.
+On Windows, open Word, go to File -> Options -> Add-Ins -> Manage -> Word Add-ins -> Go and add the "Artemis Law Journal Toolbar.dotm" file as a new add-in. Alternatively, copy "Artemis Law Journal Toolbar.dotm" to your Word STARTUP folder, typically located at "C:\Users\[username]\AppData\Roaming\Microsoft\Word\STARTUP", and then re-open Word.
 
-The source code can be viewed and edited by opening "Artemis Law Journal Toolbar.docm" in Word and pressing Alt+F11 to open up the VBA developer interface. After editing, you need to save the docm file as a dotm, and then copy the new dotm to the startup folder.
+After enabling macros, a tab named "Artemis" should appear in the Word ribbon.
 
 # License
-Creative Commons Attribution-NonCommercial 3.0 United States (CC BY-NC 3.0 US)
+MIT Expat License
+
+If you use Artemis Law Journal Toolbar, I would be interested to hear about how it has helped you or how it could be better!
 
 # Credits
 Ian Li, Ryan Yeh, and Kyle Victor
